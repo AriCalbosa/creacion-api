@@ -1,0 +1,11 @@
+<%- include('header') -%>
+
+<h3>Eliminar Película</h3>
+<form action="/movies/delete/<%= movie.id %>?_method=DELETE" method="POST">
+    <h4>Desea eliminar <%= movie.title %>?</h4>
+    <button type="submit">Eliminar</button>
+</form>
+<br>
+<br>
+
+<%- include('footer') -%>
